@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "learn es4x",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "es4x",
+    "pretest": "tsc",
+    "test": "es4x test dist/index.test.js",
+    "postinstall": "es4x install",
+    "dockerfile": "es4x dockerfile"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.8",
+    "@vertx/unit": "^3.9.0",
+    "es4x-pm": "^0.11.0"
+  },
+  "dependencies": {
+    "@vertx/core": "^3.9.0",
+    "@vertx/mongo-client": "^3.9.0",
+    "@vertx/auth-mongo": "^3.9.0",
+    "@vertx/auth-jwt": "^3.9.0"
+  },
+  "mvnDependencies": []
+}

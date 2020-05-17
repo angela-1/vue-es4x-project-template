@@ -1,2 +1,5 @@
 # vue-es4x-project-template
-使用vue3.0、es4x的项目模板
+
+新的模板框架，前端vue3.0，vite开发，后端es4x框架，mongodb数据库，jwt用户认证
+
+
