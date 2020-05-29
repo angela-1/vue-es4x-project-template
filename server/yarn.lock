@@ -2,63 +2,71 @@
 # yarn lockfile v1
 
 
-"@vertx/auth-common@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/auth-common/download/@vertx/auth-common-3.9.0.tgz#f9b34942e4b077676d3445bb6d1d9b3de967a1cb"
-  integrity sha1-+bNJQuSwd2dtNEW7bR2bPelnocs=
+"@vertx/auth-common@3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/auth-common/download/@vertx/auth-common-3.9.1.tgz#caf2478fa35a590a022ccc7db4f9067bf4ea9a39"
+  integrity sha1-yvJHj6NaWQoCLMx9tPkGe/Tqmjk=
   dependencies:
-    "@vertx/core" "3.9.0"
+    "@vertx/core" "3.9.1"
 
-"@vertx/auth-jwt@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/auth-jwt/download/@vertx/auth-jwt-3.9.0.tgz#1288e34d1305fe75650d73fbe1329d81ae1d2d15"
-  integrity sha1-EojjTRMF/nVlDXP74TKdga4dLRU=
+"@vertx/auth-mongo@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/auth-mongo/download/@vertx/auth-mongo-3.9.1.tgz#fe6b9d689eb2d878fc619063bb7637d339898ad1"
+  integrity sha1-/mudaJ6y2Hj8YZBju3Y30zmJitE=
   dependencies:
-    "@vertx/auth-common" "3.9.0"
-    "@vertx/core" "3.9.0"
-    "@vertx/jwt" "3.9.0"
+    "@vertx/auth-common" "3.9.1"
+    "@vertx/core" "3.9.1"
+    "@vertx/mongo-client" "3.9.1"
 
-"@vertx/auth-mongo@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/auth-mongo/download/@vertx/auth-mongo-3.9.0.tgz#7e2a3ac0990be1271263deae4e49f8ea96454ac1"
-  integrity sha1-fio6wJkL4ScSY96uTkn46pZFSsE=
+"@vertx/bridge-common@3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/bridge-common/download/@vertx/bridge-common-3.9.1.tgz#ef3c2762ece0e1ac64c89ce9b879c0e46fb8394c"
+  integrity sha1-7zwnYuzg4axkyJzpuHnA5G+4OUw=
   dependencies:
-    "@vertx/auth-common" "3.9.0"
-    "@vertx/core" "3.9.0"
-    "@vertx/mongo-client" "3.9.0"
+    "@vertx/core" "3.9.1"
 
-"@vertx/core@3.9.0", "@vertx/core@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/core/download/@vertx/core-3.9.0.tgz#ced205501a6c33ccc0300982770cf350fd4fd36e"
-  integrity sha1-ztIFUBpsM8zAMAmCdwzzUP1P024=
+"@vertx/core@3.9.1", "@vertx/core@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/core/download/@vertx/core-3.9.1.tgz#5a4efcb5681f458fab8bf30fc780336c9313d6fc"
+  integrity sha1-Wk78tWgfRY+ri/MPx4AzbJMT1vw=
 
-"@vertx/jwt@3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/jwt/download/@vertx/jwt-3.9.0.tgz#9735aacdf3c799069bdd72d10738619ecdfae7b8"
-  integrity sha1-lzWqzfPHmQab3XLRBzhhns3657g=
+"@vertx/mongo-client@3.9.1", "@vertx/mongo-client@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/mongo-client/download/@vertx/mongo-client-3.9.1.tgz#9fd7584b9a4c4555564e8c512644569cffff1a4c"
+  integrity sha1-n9dYS5pMRVVWToxRJkRWnP//Gkw=
   dependencies:
-    "@vertx/core" "3.9.0"
+    "@vertx/core" "3.9.1"
 
-"@vertx/mongo-client@3.9.0", "@vertx/mongo-client@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/mongo-client/download/@vertx/mongo-client-3.9.0.tgz#0ad3935710e4b52df980d5cd423e2c220885a571"
-  integrity sha1-CtOTVxDktS35gNXNQj4sIgiFpXE=
+"@vertx/unit@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/unit/download/@vertx/unit-3.9.1.tgz#793dc02d3b0daba75ec05dc638b55795abcf65de"
+  integrity sha1-eT3ALTsNq6dewF3GOLVXlavPZd4=
   dependencies:
-    "@vertx/core" "3.9.0"
+    "@vertx/core" "3.9.1"
 
-"@vertx/unit@^3.9.0":
-  version "3.9.0"
-  resolved "https://registry.npm.taobao.org/@vertx/unit/download/@vertx/unit-3.9.0.tgz#1c49f41a0e9451a08bf79c8efff2b3bc17300d13"
-  integrity sha1-HEn0Gg6UUaCL95yO//KzvBcwDRM=
+"@vertx/web-common@3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/web-common/download/@vertx/web-common-3.9.1.tgz#7014f1cad6a7691c3b5aecff09cedb7e75a45e23"
+  integrity sha1-cBTxytanaRw7Wuz/Cc7bfnWkXiM=
   dependencies:
-    "@vertx/core" "3.9.0"
+    "@vertx/core" "3.9.1"
 
-es4x-pm@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.npm.taobao.org/es4x-pm/download/es4x-pm-0.11.0.tgz#1b114a57118222a72d087a9770d6577ffc4ad619"
-  integrity sha1-GxFKVxGCIqctCHqXcNZXf/xK1hk=
+"@vertx/web@^3.9.1":
+  version "3.9.1"
+  resolved "https://registry.npm.taobao.org/@vertx/web/download/@vertx/web-3.9.1.tgz#cfba511ea3ff800b73b27681bf800f4849102287"
+  integrity sha1-z7pRHqP/gAtzsnaBv4APSEkQIoc=
+  dependencies:
+    "@vertx/auth-common" "3.9.1"
+    "@vertx/bridge-common" "3.9.1"
+    "@vertx/core" "3.9.1"
+    "@vertx/web-common" "3.9.1"
 
-typescript@^3.8:
-  version "3.9.2"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.2.tgz?cache=0&sync_timestamp=1589699667442&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.9.2.tgz#64e9c8e9be6ea583c54607677dd4680a1cf35db9"
-  integrity sha1-ZOnI6b5upYPFRgdnfdRoChzzXbk=
+es4x-pm@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.npm.taobao.org/es4x-pm/download/es4x-pm-0.12.0.tgz#05fb22f5390c4041835086f70a45d31b41b66ae9"
+  integrity sha1-Bfsi9TkMQEGDUIb3CkXTG0G2auk=
+
+typescript@^3.9.3:
+  version "3.9.3"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.3.tgz#d3ac8883a97c26139e42df5e93eeece33d610b8a"
+  integrity sha1-06yIg6l8JhOeQt9ek+7s4z1hC4o=

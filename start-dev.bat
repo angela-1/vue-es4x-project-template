@@ -5,5 +5,6 @@ REM start /MIN %MONGODB%\bin\mongod ^
 REM --dbpath %DBPATH%
 
 start /D app /MIN yarn dev
-start /D server /MIN yarn start
+start /D server /MIN yarn watchts
+start /D server /MIN yarn dev
 

@@ -1,41 +1,41 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <button @click="count++">count is: {{ count }}</button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test hot module replacement.
-    </p>
-    <p>你好再来</p>
-  </div>
+  <h1>{{ msg }}</h1>
+  <button @click="fetchData">count is: {{ count }}</button>
+  <p>
+    Edit
+    <code>components/HelloWorld.vue</code> to test hot module replacement.
+  </p>
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
   setup() {
-    return {}
+    const count = ref(0)
+    const fetchData = async () => {
+      try {
+        const url = 'http://127.0.0.1:8888'
+        const response = await fetch(url)
+        const data = await response.json()
+        console.log('rep', data)
+        count.value++
+
+        // console.log(response, data)
+        // fetch(url)
+        //   .then(response => response.json()) //定义返回的类型和数据格式
+        //   .then(data => console.log(data)) // 返回的数据
+      } catch (e) {
+        console.log('Oops, error', e)
+      }
+    }
+    return {
+      count,
+      fetchData
+    }
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>
