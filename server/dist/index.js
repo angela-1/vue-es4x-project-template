@@ -11,8 +11,8 @@ var headers = ['Authorization', 'Content-Type', 'Access-Control-Allow-Origin'];
 router.route().handler(web_1.CorsHandler.create("*").allowedMethods(methods).allowedHeaders(headers));
 function indexHandler(context) {
     context.response()
-        .putHeader('content-type', 'application/json')
-        .end(JSON.stringify({ data: '测试成功，自动重启后端' }));
+        .putHeader('Content-Type', 'application/json')
+        .end(JSON.stringify({ data: 'hello, world' }));
 }
 router.get('/').handler(indexHandler);
 vertx

@@ -11,8 +11,8 @@ router.route().handler(CorsHandler.create("*").allowedMethods(methods).allowedHe
 
 function indexHandler(context: RoutingContext) {
   context.response()
-      .putHeader('content-type', 'application/json')
-    .end(JSON.stringify({ data: '测试成功，自动重启后端' }));
+    .putHeader('Content-Type', 'application/json')
+    .end(JSON.stringify({ data: 'hello, world' }));
 }
 
 router.get('/').handler(indexHandler);
